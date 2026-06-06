@@ -1,0 +1,27 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.local
+*.log
+.DS_Store
+
+.idea/
+.vscode/
+
+# Local, untracked verifier overrides (bring-your-own backend adapter)
+*.local.ts
+
+# Sandbox access cert + private key (never commit)
+certs/
+
+# Local, untracked launch scripts (bring-your-own backend)
+*.local.sh
+
+# Persisted OAuth store (contains bearer tokens)
+*.store.json
+.store.json
+
+# Internal docs kept local-only
+CLAUDE.md
+LAUNCH.md
