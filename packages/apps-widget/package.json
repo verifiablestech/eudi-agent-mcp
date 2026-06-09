@@ -1,6 +1,10 @@
 {
   "name": "@verifiables/mcp-apps-widget",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.0",
+  "publishConfig": {
+    "access": "public",
+    "tag": "alpha"
+  },
   "description": "Self-contained MCP Apps (SEP-1865) QR widget HTML, rendered inline in the chat.",
   "license": "Apache-2.0",
   "type": "module",
@@ -14,7 +18,7 @@
   },
   "files": ["dist"],
   "scripts": {
-    "build": "node build.mjs",
+    "build": "rm -rf dist && node build.mjs",
     "prepublishOnly": "pnpm build",
     "typecheck": "tsc --noEmit"
   },

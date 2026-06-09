@@ -1,6 +1,10 @@
 {
   "name": "@verifiables/eudi-mcp-core",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.0",
+  "publishConfig": {
+    "access": "public",
+    "tag": "alpha"
+  },
   "description": "Framework-neutral core: expose EUDIW/OID4VP credential presentation as MCP tools for AI agents.",
   "license": "Apache-2.0",
   "type": "module",
@@ -14,7 +18,7 @@
   },
   "files": ["dist"],
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "prepublishOnly": "pnpm build",
     "typecheck": "tsc --noEmit"
   },
