@@ -23,5 +23,4 @@ certs/
 .store.json
 
 # Internal docs kept local-only
-CLAUDE.md
-LAUNCH.md
+/local_docs

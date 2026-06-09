@@ -15,6 +15,7 @@
   "files": ["dist"],
   "scripts": {
     "build": "node build.mjs",
+    "prepublishOnly": "pnpm build",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
